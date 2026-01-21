@@ -1,1 +1,131 @@
-<!DOCTYPE html> <html> <head> <title>SK Choudhary</title> </head> <body> <h1>Assistant Professor</h1> <p>Email: suresh.kumar1@thapar.edu</p> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+        }
+
+        /* ===== Header ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            border-bottom: 1px solid #ddd; /* light boundary */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #222;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== Main Content ===== */
+        .container {
+            display: flex;
+            padding: 40px;
+            gap: 40px;
+        }
+
+        /* Left section */
+        .left {
+            width: 30%;
+        }
+
+        .photo-box {
+            width: 100%;
+            height: 280px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .left p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Right section */
+        .right {
+            width: 70%;
+        }
+
+        .right p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive (optional) */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">CV</a>
+        <a href="#">Research Group</a>
+        <a href="#">Teaching</a>
+        <a href="#">News</a>
+        <a href="#">Publications</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Left Side -->
+    <div class="left">
+        <div class="photo-box">
+            Photo Here
+        </div>
+        <p>
+            Short text below the photo.  
+            You can add designation, affiliation, contact info, or research interests.
+        </p>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+        <p>
+            Paragraph about you. This section can describe your background,
+            current position, and main research interests.
+        </p>
+
+        <p>
+            Second paragraph with more details such as academic focus,
+            interdisciplinary work, grants, or teaching philosophy.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
