@@ -44,21 +44,27 @@
         }
 
         /* Left section */
-        .left {
-            width: 30%;
-        }
+      .left {
+    display: flex;
+    justify-content: center;   /* center whole block horizontally */
+}
 
-        .photo-box {
-    width: 240px;          /* size of circle */
+        .profile-card {
+    text-align: center;        /* center text under photo */
+}
+
+
+      .photo-box {
+    width: 240px;
     height: 240px;
-    margin-bottom: 25px;
+    margin: 0 auto 15px auto;  /* ensures text comes just below */
 }
 
 .photo-box img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;    /* perfect circle */
-    object-fit: cover;    /* natural crop */
+    border-radius: 50%;
+    object-fit: cover;
     display: block;
 }
         .left p {
@@ -76,8 +82,7 @@
             line-height: 1.8;
             margin-bottom: 15px;
         }
-        .profile-text {
-    text-align: center;
+       .profile-text {
     font-size: 14px;
     line-height: 1.6;
 }
@@ -110,16 +115,18 @@
 <div class="container">
     <!-- Left Side -->
     <div class="left">
+    <div class="profile-card">
         <div class="photo-box">
-            <img src="SK.jpeg" alt="Your Photo">
+            <img src="images/profile.jpg" alt="Profile Photo">
         </div>
-       <p class="profile-text">
-    Suresh Kumar<br>
-    Assistant Professor, CSE, TIET Patiala<br>
-    (PhD, IIT Madras)
-</p>
-    </div>
 
+        <p class="profile-text">
+            Suresh Kumar<br>
+            Assistant Professor, CSE, TIET Patiala<br>
+            (PhD, IIT Madras)
+        </p>
+    </div>
+</div>
     <!-- Right Side -->
     <div class="right">
         <p>
