@@ -49,26 +49,18 @@
         }
 
         .photo-box {
-            width: 100%;
-            height: 150px;
-            border: 1px solid #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #777;
-        }
-
+    width: 240px;          /* size of circle */
+    height: 240px;
+    margin-bottom: 25px;
+}
 
 .photo-box img {
     width: 100%;
-    height: 150%;
-    object-fit: cover;    /* crop neatly */
-    border-radius: 50%;   /* circle */
-    border: 1px solid #ccc;
+    height: 100%;
+    border-radius: 50%;    /* perfect circle */
+    object-fit: cover;    /* natural crop */
+    display: block;
 }
-
         .left p {
             font-size: 14px;
             line-height: 1.6;
